@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main (){
     //Inserindo as variaveis do programa
     int populacao, pontos;
@@ -72,4 +71,3 @@ int main (){
    
     
     return 0;
-}
