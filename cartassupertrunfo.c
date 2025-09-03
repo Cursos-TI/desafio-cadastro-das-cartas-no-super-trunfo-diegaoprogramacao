@@ -1,13 +1,14 @@
 #include <stdio.h>
+
 int main (){
     //Inserindo as variaveis do programa
     int populacao, pontos;
-    float area, pib;
+    float area, pib, densidade, pibpercapta;
     char estado, nome[20], codigo[20];
 
 //Fazendo a entrada e saida de dados da carta 01
     printf("Digite o estado da carta 01: \n", estado);
-    scanf("%c", &estado);
+    scanf("%s", &estado);
 
     printf("Digite o codigo da carta 01: \n", codigo);
     scanf("%s", &codigo);
@@ -36,10 +37,21 @@ int main (){
     printf("O PIB da carta 01 é: %f bilhoes reais\n", pib);
     printf("O numero de pontos turisticos da carta 01 é: %d\n", pontos);
 
+    // Fazendo o Caldulo da Densidade Populacional
+    densidade = populacao / area;
+
+    printf("A Densidade Populacional da carta 1 é: %f\n", densidade);
+
+    // Fazendo o Calculo do PIB per capta
+    pibpercapta = pib / populacao;
+
+    printf("O PIB per capta da carta 1 é: %f\n", pibpercapta);
+    
+
      //Fazendo a entrada e saida de dados da carta 02
      
     printf("Digite o estado da carta 02: \n", estado);
-    scanf("%c", &estado);
+    scanf("%s", &estado);
 
     printf("Digite o codigo da carta 02: \n", codigo);
     scanf("%s", &codigo);
@@ -68,6 +80,16 @@ int main (){
     printf("O PIB da carta 02 é: %f bilhoes reais\n", pib);
     printf("O numero de pontos turisticos da carta 02 é: %d\n", pontos);
 
-   
+   // Fazendo o Caldulo da Densidade Populacional
+    densidade = populacao / area;
+
+    printf("A Densidade Populacional da carta 2 é: %f\n", densidade);
+
+    // Fazendo o Calculo do PIB per capta
+    pibpercapta = pib / populacao;
+
+    printf("O PIB per capta da carta 2 é: %f\n", pibpercapta);
     
     return 0;
+
+}
